@@ -161,6 +161,7 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     height: 70%;
     width: 70%;
+    font-size: 24px;
     resize: none;
 
 }
