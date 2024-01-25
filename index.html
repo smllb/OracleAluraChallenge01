@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./scripts/utils.js" defer></script>
+    <script type="text/javascript" src="./scripts/decode.js" defer></script>
+    <script type="text/javascript" src="./scripts/encode.js" defer></script>
+    <script type="text/javascript" src="./scripts/keyboard.js" defer></script>
+    <title>Alura</title>
+</head>
+<body>
+    <div class="general-container">
+        <div class="top round">
+            <img class="top-img" src="https://coolgifs.neocities.org/gifs/144.gif">    
+            <img class="top-img" src="https://media4.giphy.com/media/vJzri9fnh7GzqgncdR/giphy.gif?cid=6c09b952x0r9656k5xziy5vizea92e6bu2pzii3f9jyts0ng&ep=v1_stickers_related&rid=giphy.gif&ct=ts">    
+
+        </div>
+        <div class="result-container">
+            <div class="result-container-img-div">
+                <img id="result-container-img" src="https://media4.giphy.com/media/6ZEoP9wiX7uadGDmN6/giphy.gif?cid=6c09b952ahwkbd94guzpaur9p0fujle0q6u0usza5tofxvrm&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s">
+            </div>
+            <div class="mid-result base round">
+                <p>Textos decodificados:</p>
+                <div id="output-container">
+                    
+                    <div id="outputs">
+
+                    </div>
+                </div>
+                <button id="copy-output" class="button" onclick="copyContentToKeyboard()">Copiar</button>
+            </div>
+        </div> 
+        <div class="input-container base">
+            <div class="form-container">
+                <div id="form-input" class="round">
+                    <p id="label">Digite seu texto</p>
+                    <textarea id="input" class="round"></textarea>
+                    <p>Apenas letra minúscula e sem acento.</p>
+                    <div class="form-input-buttons">
+                        <button id="submit-input-encode" class="button" onclick="updateText(encodeInput(getInputFromTextAreaAndResetText()))">Criptografar</button>
+                        <button id="submit-input-decode" class="button" onclick="updateText(decodeInput(getInputFromTextAreaAndResetText()))">Descriptografar</button>
+                    </div>          
+                </div>
+            </div>
+        </div>
+
+        <div class="footer round">
+            <a href="https://github.com/smllb">
+                <img class="img-link" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
