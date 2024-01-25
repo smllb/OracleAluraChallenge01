@@ -9,7 +9,7 @@ let operationCount = 1;
 
 var checkTextForUppercaseAndAccent = (text) => {
     if (!text.trim()) return
-    let uppercaseAndAccentRegex = /[À-ÖØ-öø-ÿ A-Z]/g;
+    let uppercaseAndAccentRegex = /[À-ÖØ-öø-ÿA-Z]/g;
     return  uppercaseAndAccentRegex.test(text);
     
 }
