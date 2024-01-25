@@ -6,7 +6,9 @@ let letterDictionary = {
     'u': 'ufat'
 };
 let operationCount = 1;
+
 var checkTextForUppercaseAndAccent = (text) => {
+    if (!text.trim()) return
     let uppercaseAndAccentRegex = /[À-ÖØ-öø-ÿ A-Z]/g;
     return  uppercaseAndAccentRegex.test(text);
     
